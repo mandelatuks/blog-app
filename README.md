@@ -1,75 +1,69 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+#  Blog app
 
-> One paragraph statement about the project.
-
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
+This README documents steps necessary to get the application up and running.
 
 
-## Getting Started
+* Ruby version
+  - 2.7.4
+* PSQL version
+  - PostgreSQL 14.0
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+* System dependencies
+  - See [Dependencies](./Gemfile) gem file
 
+* Configuration
+  - Install ruby  - [Installation guides](https://www.ruby-lang.org/en/documentation/installation/)
+  - install PostgreSQL - [Installation guides](https://www.postgresql.org/download/linux/)
+  - install libpqdev ``` sudo apt install libpq-dev  ``` for linux debian users
+  - Make sure your Postgresql is running. If not, start the service by typing ```sudo service postgresql start``` in your terminal (for linux debian users)
 
-To get a local copy up and running follow these simple example steps.
+* Installation 
+  - ```git clone``` this [repo](https://github.com/blessedjasonmwanza/rails-blog-app)
+  - Run:
+    - ```cd blog-app```
+    - ```bundle install```
+  
+* Database creation
+  - Run
+       - ```rake db:create```
 
-### Prerequisites
+* Tests
+  - Run (*ensure your postgreSQL is running as well*)
+      - Integrations
+        - **Method 1:** ```bundle exec rspec test/integration/ ```
+        > if fails, try
+        - **Method 2:**  ```rspec test/integration/```
 
-### Setup
+* Run project
+  - ```rails db:migrate:reset db:seed``` then
+  - Run ```rails s``` and visit [http://localhost:3000/](http://localhost:3000/) in your browser!
 
-### Install
+<!-- * Database initialization -->
 
-### Usage
+<!-- * How to run the test suite -->
 
-### Run tests
+<!-- * Services (job queues, cache servers, search engines, etc.) -->
 
-### Deployment
-
-
-
+<!-- * Deployment instructions -->
 ## Authors
 
-👤 **Author1**
+👤 **Mandela Tumukunde**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mandelatuks](https://github.com/mandelatuks)
+- Twitter: [@MandelaTm1](https://twitter.com/MandelaTm1)
+- LinkedIn: [@Mandela Tumukunde](https://www.linkedin.com/in/mandela-tumukunde-794755194/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/blessedjasonmwanza/rails-blog-app/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
