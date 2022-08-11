@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_220_810_133_159) do # rubocop:disable Metrics/BlockLength
+ActiveRecord::Schema[7.0].define(version: 20_220_811_201_208) do # rubocop:disable Metrics/BlockLength
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -48,14 +48,14 @@ ActiveRecord::Schema[7.0].define(version: 20_220_810_133_159) do # rubocop:disab
     t.string 'name'
     t.string 'photo'
     t.text 'bio'
-    t.integer 'PostsCounter'
+    t.integer 'posts_counter'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
   end
 
-  add_foreign_key 'comments', 'posts', column: 'post_id'
+  add_foreign_key 'comments', 'posts'
   add_foreign_key 'comments', 'users', column: 'author_id'
-  add_foreign_key 'likes', 'posts', column: 'post_id'
+  add_foreign_key 'likes', 'posts'
   add_foreign_key 'likes', 'users', column: 'author_id'
   add_foreign_key 'posts', 'users', column: 'author_id'
 end
