@@ -77,4 +77,5 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 # Rspec Gem
 group :development, :test do
   gem 'rspec-rails'
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 end
