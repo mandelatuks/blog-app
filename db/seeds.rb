@@ -22,3 +22,6 @@ Comment.create!(post: third_post, author: first_user, text: 'Hi Lilly! this is s
 Comment.create!(post: third_post, author: second_user, text: 'Hi Tom! I like this')
 Comment.create!(post: fourth_post, author: first_user, text: 'Hi Lilly! Amazing work')
 Comment.create!(post: fourth_post, author: second_user, text: 'Hi Tom! I need more of such writings')
+
+Like.create!(author: first_user, post: first_post)
+Like.create!(author: first_user, post: second_post)
