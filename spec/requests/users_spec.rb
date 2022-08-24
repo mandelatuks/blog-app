@@ -12,7 +12,7 @@ describe 'GET /' do
   end
   it 'renders the Post text' do
     get '/users'
-    expect(response.body).to include('Lilly')
+    expect(response.body).to include('Tom')
   end
 end
 describe 'GET /users/:id' do

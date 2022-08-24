@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'post_show', type: :feature do
-  user = User.find_by(id: 2)
+  user = User.find_by(id: 1)
   post = user.posts.first
 
   before(:each) do
