@@ -5,7 +5,7 @@ RSpec.describe 'post_index', type: :feature do
   post = user.posts.first
 
   before(:each) do
-    visit user_posts_path(User.find_by(id:2).id)
+    visit user_posts_path(User.find_by(id: 2).id)
   end
 
   it 'it shows the user\'s profile picture' do
