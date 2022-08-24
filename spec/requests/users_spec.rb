@@ -12,7 +12,7 @@ describe 'GET /' do
   end
   it 'renders the Post text' do
     get '/users'
-    expect(response.body).to include('Here is a list of posts for a given user')
+    expect(response.body).to include('Tom')
   end
 end
 describe 'GET /users/:id' do
@@ -26,6 +26,6 @@ describe 'GET /users/:id' do
   end
   it 'renders the Post text' do
     get '/users/1'
-    expect(response.body).to include('howing is a list of posts for a given user')
+    expect(response.body).to include('Comments')
   end
 end
