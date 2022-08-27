@@ -8,15 +8,15 @@ paths:
     get:
       summary: Get all comments
       tags:
-      - Comments
+        - Comments
       parameters:
-      - name: id
-        in: path
-        required: true
-        schema:
-          type: string
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
-        '200':
+        "200":
           description: comments found
           content:
             application/json:
@@ -27,15 +27,15 @@ paths:
     post:
       summary: Create a comment
       tags:
-      - Comments
+        - Comments
       parameters:
-      - name: id
-        in: path
-        required: true
-        schema:
-          type: string
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
-        '201':
+        "201":
           description: comment created
           content:
             application/json:
@@ -45,15 +45,15 @@ paths:
     get:
       summary: Get all posts
       tags:
-      - Posts
+        - Posts
       parameters:
-      - name: id
-        in: path
-        required: true
-        schema:
-          type: string
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
-        '200':
+        "200":
           description: posts found
           content:
             application/json:
@@ -65,15 +65,15 @@ paths:
     get:
       summary: Get post by id
       tags:
-      - Posts
+        - Posts
       parameters:
-      - name: id
-        in: path
-        required: true
-        schema:
-          type: string
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
-        '200':
+        "200":
           description: post found
           content:
             application/json:
@@ -83,9 +83,9 @@ paths:
     get:
       summary: Get all users
       tags:
-      - Users
+        - Users
       responses:
-        '200':
+        "200":
           description: users found
           content:
             application/json:
@@ -97,22 +97,22 @@ paths:
     get:
       summary: Get user by id
       tags:
-      - Users
+        - Users
       parameters:
-      - name: id
-        in: path
-        required: true
-        schema:
-          type: string
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
-        '200':
+        "200":
           description: user found
           content:
             application/json:
               schema:
                 "$ref": "#/components/schemas/User"
 servers:
-- url: https://{defaultHost}
-  variables:
-    defaultHost:
-      default: www.example.com
+  - url: https://{defaultHost}
+    variables:
+      defaultHost:
+        default: www.example.com
