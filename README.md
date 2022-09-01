@@ -20,7 +20,7 @@ This README documents steps necessary to get the application up and running.
   - Make sure your Postgresql is running. If not, start the service by typing ```sudo service postgresql start``` in your terminal (for linux debian users)
 
 * Installation 
-  - ```git clone``` this [repo](https://github.com/blessedjasonmwanza/rails-blog-app)
+  - ```git clone``` this [repo](https://github.com/mandelatuks/blog-app)
   - Run:
     - ```cd blog-app```
     - ```bundle install```
